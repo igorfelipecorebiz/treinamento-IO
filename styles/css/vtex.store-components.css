@@ -15,9 +15,6 @@
   padding: 0px;
 }
 
-.infoCardImage--info-card-home {
-  height: 350px;
-}
 .infoCardHeadline {
   font-weight: normal;
   font-size: 20px;
@@ -30,7 +27,6 @@
   color: #ffffff;
   text-align: left;
 }
-
 
 .newsletter {
   background-color: #03054e;

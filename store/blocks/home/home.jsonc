@@ -32,6 +32,8 @@
       "imageUrl": "assets/banner.jpg",
       "headline": "Olá, o que você está buscando?",
       "subhead": "Criar ou migrar seu e-commerce?",
+      "textColor": "white",
+      "callToActionMode": "none",
       "textAlignment": "center",
       "textPosition": "left",
       "blockClass": "info-card-home"
@@ -56,6 +58,8 @@
       "imageUrl": "assets/banner.jpg",
       "headline": "Olá, o que você está buscando?",
       "subhead": "Criar ou migrar seu e-commerce?",
+      "textColor": "white",
+      "callToActionMode": "none",
       "textAlignment": "center",
       "textPosition": "left",
       "blockClass": "info-card-home"
@@ -67,6 +71,8 @@
       "imageUrl": "assets/banner.jpg",
       "headline": "Olá, o que você está buscando?",
       "subhead": "Criar ou migrar seu e-commerce?",
+      "textColor": "white",
+      "callToActionMode": "none",
       "textAlignment": "center",
       "textPosition": "left",
       "blockClass": "info-card-home"
