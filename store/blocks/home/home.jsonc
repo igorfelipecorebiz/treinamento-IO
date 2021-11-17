@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "slider-layout#home",
       "__fold__.experimentalLazyAssets",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
@@ -9,16 +9,7 @@
     ]
   },
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
-    "props": {
-      "height": 720,
-      "images": [
-        
-      ]
-    }
-  },
-  "slider-layout#demo-images": {
+  "slider-layout#home": {
     "children": ["info-card#home1", "info-card#home2", "info-card#home3", "info-card#home4"],
     "props": {
       "itemsPerPage": {
@@ -26,11 +17,10 @@
         "tablet": 1,
         "phone": 1
       },
-      "infinite": true,
+      "showPaginationDots": "always",
       "showNavigationArrows": "never",
-      "blockClass": "carousel",
       "autoplay": {
-        "timeout": 6000,
+        "timeout": 7000,
         "stopOnHover": true
       }
     }
@@ -38,50 +28,48 @@
 
   "info-card#home1": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "imageUrl": "assets/image.jpg",
+      "isFullModeStyle": true,
+      "imageUrl": "assets/banner.jpg",
       "headline": "Olá, o que você está buscando?",
       "subhead": "Criar ou migrar seu e-commerce?",
-      "blockClass": "info-card-home",
       "textAlignment": "center",
-      "textPosition": "left"
+      "textPosition": "left",
+      "blockClass": "info-card-home"
     }
   },
   "info-card#home2": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "imageUrl": "assets/image.jpg",
+      "isFullModeStyle": true,
+      "imageUrl": "assets/banner.jpg",
       "headline": "Olá, o que você está buscando?",
       "subhead": "Criar ou migrar seu e-commerce?",
-      "blockClass": "info-card-home",
+      "textColor": "white",
+      "callToActionMode": "none",
       "textAlignment": "center",
-      "textPosition": "left"
+      "textPosition": "left",
+      "blockClass": "info-card-home"
     }
   },
   "info-card#home3": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "imageUrl": "assets/image.jpg",
+      "isFullModeStyle": true,
+      "imageUrl": "assets/banner.jpg",
       "headline": "Olá, o que você está buscando?",
       "subhead": "Criar ou migrar seu e-commerce?",
-      "blockClass": "info-card-home",
       "textAlignment": "center",
-      "textPosition": "left"
+      "textPosition": "left",
+      "blockClass": "info-card-home"
     }
   },
   "info-card#home4": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "imageUrl": "assets/image.jpg",
+      "isFullModeStyle": true,
+      "imageUrl": "assets/banner.jpg",
       "headline": "Olá, o que você está buscando?",
       "subhead": "Criar ou migrar seu e-commerce?",
-      "blockClass": "info-card-home",
       "textAlignment": "center",
-      "textPosition": "left"
+      "textPosition": "left",
+      "blockClass": "info-card-home"
     }
   },
 
@@ -116,14 +104,24 @@
   },
 
   "flex-layout.row#newsletter-form": {
-    "children": ["newsletter-form"]
+    "children": ["newsletter-form"],
+    "props": {
+      "blockClass": "newsletterForm"
+    }
   },
   "newsletter-form": {
     "children": [
+      "rich-text#newsletterLabel",
       "newsletter-input-name",
       "newsletter-input-email",
       "newsletter-submit"
     ]
+  },
+  "rich-text#newsletterLabel": {
+    "props": {
+      "text": "**Participe de nossas news com promoções e novidades!**",
+      "blockClass": "question"
+    }
   },
   "newsletter-input-name": {
     "props": {

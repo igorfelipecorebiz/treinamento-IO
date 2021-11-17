@@ -8,7 +8,8 @@
 }
 
 .infoCardContainer--info-card-home {
-  height: 350px;
+  height: 430px;
+  width: 100%;
   margin: 0 auto;
   background-color: #000000;
   padding: 0px;
@@ -29,9 +30,7 @@
   color: #ffffff;
   text-align: left;
 }
-.infoCardCallActionContainer {
-  visibility: hidden;
-}
+
 
 .newsletter {
   background-color: #03054e;

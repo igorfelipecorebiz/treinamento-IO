@@ -34,14 +34,13 @@
   text-align: center;
   max-width: 540px;
   margin: 0 16px;
-  padding-top: 120px;
-  color: #03034E;
+  padding-top: 50px;
+  color: #333333;
 }
 
 .container--question .strong {
-  font-size: 32px;
+  font-size: 22px;
   line-height: 2rem;
-  font-weight: 700;
 }
 
 .container--link .paragraph {
@@ -73,8 +72,12 @@
 
 @media only screen and (min-width: 640px) {
   .container--question .strong {
-    font-size: 40px;
-    line-height: 3rem;
+    width: 531px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .container--about {
