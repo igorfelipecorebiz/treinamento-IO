@@ -7,7 +7,7 @@
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
-      "add-to-cart-button"
+      "add-to-cart-button#buy"
     ]
   },
   "flex-layout.col#productRating": {
@@ -85,7 +85,7 @@
     }
   },
 
-  "add-to-cart-button": {
+  "add-to-cart-button#buy": {
     "props": {
       "text": "Comprar"
     }

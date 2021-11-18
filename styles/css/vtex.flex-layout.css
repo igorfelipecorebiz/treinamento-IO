@@ -9,9 +9,7 @@
 
 .flexRowContent--newsletterForm {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 146px;
+  height: 100px;
   background-color: #F2F2F2;
 }
 
