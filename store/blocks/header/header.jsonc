@@ -33,6 +33,11 @@
       "minicart.v2"
     ]
   },
+  "search-bar": {
+    "props": {
+      "placeholder": "O que está procurando?"
+    }
+  },
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
