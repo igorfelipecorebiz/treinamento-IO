@@ -10,6 +10,7 @@
 .flexRowContent--newsletterForm {
   display: flex;
   height: 60px;
+  padding-bottom: 18px;
   background-color: #F2F2F2;
 }
 

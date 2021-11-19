@@ -1,0 +1,3 @@
+.input:last-child::placeholder {
+    color: #000000;
+}
