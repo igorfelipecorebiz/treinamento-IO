@@ -24,6 +24,76 @@
   display: block;
 }
 
+.paragraph--localizacaoTitle {
+  font-size: 20px;
+  margin-top: 0;
+}
+.paragraph--localizacaoTitle::after {
+  content: "";
+  width: 45px;
+  border-bottom: 5px solid #FFFFFF;
+  display: block;
+}
+.paragraph--localizacao {
+  font-size: 13px;
+  margin-left: 110px;
+}
+.paragraph--buttonFooter1 {
+  display: flex;
+}
+.paragraph--buttonFooter2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper--buttonFooter1 {
+  background-color: #FFFFFF;
+  width: 195px;
+  height: 38px;
+  border-radius: 5px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-top: 25px;
+}
+.wrapper--buttonFooter2 {
+  background-color: #FFFFFF;
+  width: 195px;
+  height: 38px;
+  border-radius: 5px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-top: 5px;
+}
+.image--buttonFooter1 {
+  margin-right: 14px;
+}
+.image--buttonFooter2 {
+  width: 18px;
+  height: 19px;
+  margin-right: 10px;
+}
+.strong--buttonFooter2 {
+  width: 129px;
+}
+
+.container--core {
+  margin-right: 12px;
+}
+.container--vtex {
+  margin-left: 12px;
+}
+.paragraph--core {
+  font-size: 10px;
+}.paragraph--vtex {
+  font-size: 10px;
+}
+
 .container--deals .paragraph {
   margin: 0;
 }

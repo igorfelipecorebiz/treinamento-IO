@@ -9,12 +9,9 @@
   },
   "flex-layout.row#footer": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "flex-layout.col#footer-1-desktop",
+      "flex-layout.col#footer-2-desktop",
+      "flex-layout.col#footer-3-desktop"
     ],
     "props": {
       "blockClass": "menu-row",
@@ -23,28 +20,90 @@
     }
   },
 
-  "social-networks": {
+  "flex-layout.col#footer-1-desktop": {
+    "children": ["rich-text#localizacaoTitle", "rich-text#localizacao"]
+  },
+  "flex-layout.col#footer-2-desktop": {
+    "children": ["rich-text#button1", "rich-text#button2"]
+  },
+  "flex-layout.col#footer-3-desktop": {
+    "children": ["flex-layout.row#copy"],
     "props": {
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-      ]
+      "blockClass": "footerCopy"
     }
   },
+
+  "rich-text#localizacaoTitle": {
+    "props": {
+      "blockClass":"localizacaoTitle",
+      "text": "Localização",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#localizacao": {
+    "props": {
+      "blockClass": "localizacao",
+      "text": "Avenida Andrômeda, 2000. Bloco 6 e 8\n Alphavile SP\n brasil@corebiz.ag\n +55 11 3090 1039",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-8",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#button1": {
+    "props": {
+      "blockClass": "buttonFooter1",
+      "text": "![Email](assets/mail.png) **ENTRE EM CONTATO**",
+      "textColor": "black",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#button2": {
+    "props": {
+      "blockClass": "buttonFooter2",
+      "text": "![Phone](assets/icon.png) **FALE COM O NOSSO CONSULTOR ONLINE**",
+      "textColor": "black",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#copy": {
+    "children":[
+      "rich-text#corebiz",
+      "rich-text#vtex"
+    ],
+    "props":{
+      "blockClass": "copy"
+    }
+  },
+  "rich-text#corebiz": {
+    "props": {
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Created by \n [![Corebiz](assets/corebiz.png)](http://www.corebiz.ag)",
+      "blockClass": "core"
+    }
+  },
+  "rich-text#vtex": {
+    "props": {
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Powered by \n [![Vtex](assets/Vtex.png)](http://www.vtex.com)",
+      "blockClass": "vtex"
+    }
+  },
+
 
   "footer-layout.mobile": {
     "children": [
@@ -78,7 +137,7 @@
       "paddingTop": 4,
       "paddingBottom": 4
     },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+    "children": []
   },
   "rich-text#footer-mobile": {
     "props": {
