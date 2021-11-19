@@ -3,8 +3,17 @@
 }
 
 .autoCompleteOuterContainer {
+  display: flex;
   border-bottom: 1px solid #7A7A7A;
   width: 718px;
+}
+.searchBarIcon--search {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+.searchIcon {
+  margin-right: -23px;
 }
 
 .infoCardContainer--info-card-home {
