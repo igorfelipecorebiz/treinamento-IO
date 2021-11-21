@@ -107,42 +107,112 @@
 
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
+      "flex-layout.row#footer-mobile"
     ]
   },
-  "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
+  "flex-layout.row#footer-mobile": {
+    "children": [
+      "flex-layout.col#footer-1-mobile",
+      "flex-layout.col#footer-2-mobile",
+      "flex-layout.col#footer-3-mobile"
+    ],
     "props": {
-      "blockClass": "payment-methods",
+      "blockClass": "menu-row",
       "paddingTop": 4,
       "paddingBottom": 4
     }
   },
   "flex-layout.col#footer-1-mobile": {
+    "children": ["rich-text#localizacaoTitleMobile", "rich-text#localizacaoMobile"]
+  },
+  "flex-layout.col#footer-2-mobile": {
+    "children": ["rich-text#button1Mobile", "rich-text#button2Mobile"]
+  },
+  "flex-layout.col#footer-3-mobile": {
+    "children": ["flex-layout.row#copyMobile"],
+    "props": {
+      "blockClass": "footerCopy"
+    }
+  },
+  "rich-text#localizacaoTitleMobile": {
+    "props": {
+      "blockClass":"localizacaoTitle",
+      "text": "Localização",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#localizacaoMobile": {
+    "props": {
+      "blockClass": "localizacaoMobile",
+      "text": "Avenida Andrômeda, 2000. Bloco 6 e 8\n Alphavile SP\n brasil@corebiz.ag\n +55 11 3090 1039",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-8",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#button1Mobile": {
+    "props": {
+      "blockClass": "buttonFooter1",
+      "text": "![Email](assets/mail.png) **ENTRE EM CONTATO**",
+      "textColor": "black",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#button2Mobile": {
+    "props": {
+      "blockClass": "buttonFooter2",
+      "text": "![Phone](assets/icon.png) **FALE COM O NOSSO CONSULTOR ONLINE**",
+      "textColor": "black",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#copyMobile": {
+    "children":[
+      "rich-text#corebizMobile",
+      "rich-text#vtexMobile"
+    ],
+    "props":{
+      "blockClass": "copy"
+    }
+  },
+  "rich-text#corebizMobile": {
+    "props": {
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Created by \n [![Corebiz](assets/corebiz.png)](http://www.corebiz.ag)",
+      "blockClass": "core"
+    }
+  },
+  "rich-text#vtexMobile": {
+    "props": {
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Powered by \n [![Vtex](assets/Vtex.png)](http://www.vtex.com)",
+      "blockClass": "vtex"
+    }
+  },
+
+  "flex-layout.col#footer-11-mobile": {
     "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
     ],
     "props": {
-      "blockClass": "payment-methods",
+      "blockClass": "",
       "paddingTop": 4,
       "paddingBottom": 4,
       "rowGap": 4
-    }
-  },
-  "flex-layout.row#1-footer-mobile": {
-    "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": []
-  },
-  "rich-text#footer-mobile": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
     }
   }
 }

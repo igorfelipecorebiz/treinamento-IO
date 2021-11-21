@@ -84,6 +84,12 @@
   width: 129px;
 }
 
+.paragraph--localizacaoMobile {
+  margin-left: 0px;
+  font-size: 13px;
+}
+
+
 .container--core {
   margin-right: 12px;
 }
