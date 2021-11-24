@@ -1,6 +1,7 @@
 {
   "product-summary.shelf": {
     "children": [
+      "flag-nike",
       "stack-layout#prodsum",
       "product-summary-name",
       "product-summary-space",
