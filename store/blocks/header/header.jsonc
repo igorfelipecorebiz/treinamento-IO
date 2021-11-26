@@ -65,19 +65,20 @@
     "children": ["sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": ["flex-layout.row#1-mobile", "flex-layout.row#mobileSearchBar"]
   },
   "flex-layout.row#1-mobile": {
     "children": [
+      "drawer",
       "logo#mobile",
-      "login",
       "minicart.v2"
     ],
     "props": {
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "horizontalAlign": "center"
     }
   },
 
@@ -86,7 +87,44 @@
       "title": "Logo",
       "href": "/",
       "url": "https://babadotop.vteximg.com.br/arquivos/logo-corebiz.svg",
-      "width": "70"
+      "width": "110"
+    }
+  },
+
+  "flex-layout.row#mobileSearchBar": {
+    "children":[
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "main-header-searchBar",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    }
+  },
+  "drawer": {
+    "children": [
+      "menu#drawer"
+    ]
+  },
+  
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-clothing"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#category-clothing": {
+    "children":[
+      "rich-text#menuDrawer"
+    ]
+  },
+  "rich-text#menuDrawer":{
+    "props":{
+      "text": "Open Drawer"
     }
   }
 }
