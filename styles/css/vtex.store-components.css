@@ -37,6 +37,14 @@
   text-align: left;
 }
 
+.infoCardContainer--info-card-home-mobile {
+  height: 430px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 0px;
+}
+
 .newsletter {
   background-color: #03054e;
   max-width: 1528px;

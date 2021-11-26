@@ -1,6 +1,12 @@
 {
   "store.home": {
     "blocks": [
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile"
+    ]
+  },
+  "responsive-layout.desktop#desktop": {
+    "children": [
       "slider-layout#home",
       "__fold__.experimentalLazyAssets",
       "rich-text#shelf-title",
@@ -9,7 +15,6 @@
       "flex-layout.row#newsletter"
     ]
   },
-
   "slider-layout#home": {
     "children": ["info-card#home1", "info-card#home2", "info-card#home3", "info-card#home4"],
     "props": {
@@ -77,6 +82,87 @@
       "textAlignment": "center",
       "textPosition": "left",
       "blockClass": "info-card-home"
+    }
+  },
+
+  "responsive-layout.mobile#mobile": {
+    "children": [
+      "slider-layout#mobile",
+      "__fold__.experimentalLazyAssets",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "rich-text#newsletterLabel",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "slider-layout#mobile": {
+    "children": ["info-card#mobile1", "info-card#mobile2", "info-card#mobile3", "info-card#mobile4"],
+    "props": {
+      "blockClass": "slider-mobile",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showPaginationDots": "always",
+      "showNavigationArrows": "never",
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      }
+    }
+  },
+
+  "info-card#mobile1": {
+    "props": {
+      "isFullModeStyle": true,
+      "imageUrl": "assets/banner-mobile.png",
+      "headline": "Olá, o que você está buscando?",
+      "subhead": "Criar ou migrar seu e-commerce?",
+      "textColor": "white",
+      "callToActionMode": "none",
+      "textAlignment": "center",
+      "textPosition": "left",
+      "blockClass": "info-card-home-mobile"
+    }
+  },
+  "info-card#mobile2": {
+    "props": {
+      "isFullModeStyle": true,
+      "imageUrl": "assets/banner-mobile.png",
+      "headline": "Olá, o que você está buscando?",
+      "subhead": "Criar ou migrar seu e-commerce?",
+      "textColor": "white",
+      "callToActionMode": "none",
+      "textAlignment": "center",
+      "textPosition": "left",
+      "blockClass": "info-card-home-mobile"
+    }
+  },
+  "info-card#mobile3": {
+    "props": {
+      "isFullModeStyle": true,
+      "imageUrl": "assets/banner-mobile.png",
+      "headline": "Olá, o que você está buscando?",
+      "subhead": "Criar ou migrar seu e-commerce?",
+      "textColor": "white",
+      "callToActionMode": "none",
+      "textAlignment": "center",
+      "textPosition": "left",
+      "blockClass": "info-card-home-mobile"
+    }
+  },
+  "info-card#mobile4": {
+    "props": {
+      "isFullModeStyle": true,
+      "imageUrl": "assets/banner-mobile.png",
+      "headline": "Olá, o que você está buscando?",
+      "subhead": "Criar ou migrar seu e-commerce?",
+      "textColor": "white",
+      "callToActionMode": "none",
+      "textAlignment": "center",
+      "textPosition": "left",
+      "blockClass": "info-card-home-mobile"
     }
   },
 
