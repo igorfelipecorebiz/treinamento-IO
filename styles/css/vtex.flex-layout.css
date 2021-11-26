@@ -50,12 +50,13 @@
   align-items: center;
   background-color: #ffffff;
   justify-content: space-around;
+  height: 55px;
 }
 .flexRow--main-header-searchBar {
-  background-color: #ffffff;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  height: 40px;
 }
 .flexRowContent--main-header-searchBar {
   width: 290px;
