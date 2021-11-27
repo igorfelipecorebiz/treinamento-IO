@@ -89,7 +89,7 @@
     "children": [
       "slider-layout#mobile",
       "__fold__.experimentalLazyAssets",
-      "rich-text#shelf-title",
+      "rich-text#shelf-title-mobile",
       "flex-layout.row#shelf",
       "rich-text#newsletterLabel",
       "flex-layout.row#newsletter"
@@ -173,6 +173,14 @@
       "textPosition": "left"
     }
   },
+  "rich-text#shelf-title-mobile": {
+    "props": {
+      "text": "## Mais Vendidos",
+      "blockClass": ["shelfTitle", "shelfTitleMobile"],
+      "textPosition": "left"
+    }
+  },
+  
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
