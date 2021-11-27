@@ -191,7 +191,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Created by \n [![Corebiz](assets/corebiz.png)](http://www.corebiz.ag)",
-      "blockClass": "core"
+      "blockClass": "coreMobile"
     }
   },
   "rich-text#vtexMobile": {
@@ -201,18 +201,7 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Powered by \n [![Vtex](assets/Vtex.png)](http://www.vtex.com)",
-      "blockClass": "vtex"
-    }
-  },
-
-  "flex-layout.col#footer-11-mobile": {
-    "children": [
-    ],
-    "props": {
-      "blockClass": "",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
+      "blockClass": "vtexMobile"
     }
   }
 }

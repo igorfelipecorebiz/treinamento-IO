@@ -42,6 +42,55 @@
   border-bottom: 5px solid #FFFFFF;
   display: block;
 }
+@media screen and (max-width: 745px) {
+  .paragraph--localizacaoTitle {
+    font-size: 25px;
+    margin-top: 0;
+  }
+  .paragraph--localizacaoTitle::after {
+    content: "";
+    width: 35px;
+    border-bottom: 5px solid #FFFFFF;
+    display: block;
+  }
+  .wrapper--buttonFooter1 {
+    background-color: #FFFFFF;
+    width: 198px;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  .wrapper--buttonFooter2 {
+    background-color: #FFFFFF;
+    width: 198px;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .container--buttonFooter2 {
+    margin-top: 15px;
+  }
+  .container--coreMobile {
+    margin-right: 35px;
+    font-size: 11px;
+  }
+  .container--vtexMobile {
+    margin-left: 35px;
+    font-size: 11px;
+  }
+}
 .paragraph--localizacao {
   font-size: 13px;
   margin-left: 110px;

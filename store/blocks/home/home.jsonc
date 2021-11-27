@@ -235,6 +235,7 @@
   },
   "newsletter-submit": {
       "props": {
+        "blockClass": ["desktop", "mobile"],
         "submitButtonLabel": "Eu quero!"
       }
   }

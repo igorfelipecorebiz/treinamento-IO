@@ -11,7 +11,7 @@
     margin: 5px;
 }
 
-.formSubmitContainer {
+.formSubmitContainer--desktop {
     width: 142px;
     height: 36px;
     margin-bottom: 11px;
@@ -26,36 +26,26 @@
         width: 100%;
         margin-top: 30px;
     }
-    .nameInputContainer,
+    .nameInputContainer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+    }
     .emailInputContainer {
         display: flex;
         align-items: center;
-        width: 310px;
-        height: 55px;
+        width: 100%;
+        height: 48px;
     }
-    .formSubmitContainer {
+    .formSubmitContainer--mobile :global(.vtex-button){
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 310px;
-        height: 55px;
+        width: 100%;
+        height: 48px;
         margin-bottom: 11px;
+        margin-left: 0px;
+        text-transform: inherit;
     }
-
-    /* :global(.vtex-store-newsletter-1.x-nameInputContainer),
-    :global(.vtex-store-newsletter-1.x-emailInputContainer) {
-        display: flex;
-        align-items: center;
-        width: 310px;
-        height: 55px;
-    }
-
-    :global(.vtex-store-newsletter-1.x-formSubmitContainer) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 310px;
-        height: 55px;
-        margin-bottom: 11px;
-    } */
 }
