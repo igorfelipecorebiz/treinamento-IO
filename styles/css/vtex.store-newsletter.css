@@ -16,3 +16,46 @@
     height: 36px;
     margin-bottom: 11px;
 }
+
+@media screen and (max-width: 745px) {
+    .newsletterForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .nameInputContainer,
+    .emailInputContainer {
+        display: flex;
+        align-items: center;
+        width: 310px;
+        height: 55px;
+    }
+    .formSubmitContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 310px;
+        height: 55px;
+        margin-bottom: 11px;
+    }
+
+    /* :global(.vtex-store-newsletter-1.x-nameInputContainer),
+    :global(.vtex-store-newsletter-1.x-emailInputContainer) {
+        display: flex;
+        align-items: center;
+        width: 310px;
+        height: 55px;
+    }
+
+    :global(.vtex-store-newsletter-1.x-formSubmitContainer) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 310px;
+        height: 55px;
+        margin-bottom: 11px;
+    } */
+}

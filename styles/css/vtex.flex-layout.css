@@ -7,13 +7,29 @@
   background-color: #000000;
 }
 
+.flexRow--newsletterForm {
+  background-color: #F2F2F2;
+}
 .flexRowContent--newsletterForm {
   display: flex;
   height: 60px;
   padding-bottom: 18px;
   background-color: #F2F2F2;
 }
-
+@media screen and (max-width: 745px) {
+  .flexRow--newsletterForm {
+    background-color: #F2F2F2;
+  }
+  .flexRowContent--newsletterForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: #F2F2F2;
+  }
+}
 .flexColChild--footerCopy {
   display: flex;
   justify-content: space-evenly;

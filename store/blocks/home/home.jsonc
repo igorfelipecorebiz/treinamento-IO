@@ -176,7 +176,7 @@
   "rich-text#shelf-title-mobile": {
     "props": {
       "text": "## Mais Vendidos",
-      "blockClass": ["shelfTitle", "shelfTitleMobile"],
+      "blockClass": "shelfTitle",
       "textPosition": "left"
     }
   },
